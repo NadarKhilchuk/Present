@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Наша сім'я</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="./images/favikona-serdce.svg">
+</head>
+<body>
+<header class="header">
+    <div class="header-container container">
+    <div class="header-block">
+        <div class="header-slideshow">
+        <img class="header-slide" src="./images/serdce.png" alt="serdce" class="slide">
+        <img class="header-slide" src="./images/serdce2.png" alt="serdce" class="slide">
+        <img class="header-slide" src="./images/serdce3.png" alt="serdce" class="slide">
+        </div>
+<h1 class="header-logo">Наша сім'я</h1>
+<div class="header-slideshow">
+    <img class="header-slide" src="./images/serdce3.png" alt="serdce" class="slide">
+    <img class="header-slide" src="./images/serdce2.png" alt="serdce" class="slide">
+    <img class="header-slide" src="./images/serdce.png" alt="serdce" class="slide">
+      </div>
+</div>
+</div>
+</header>
+    <main class="main">
+        <section class="family-section">
+            <h2>❤️ Сімейний альбом ❤️</h2>
+            <div class="gallery">
+                <div class="photo">
+                    <img class="family-photo" class="family-photo" src="./images/nastya1.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya2.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya3.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya4.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya6.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/bodya.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/rada.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/rada3.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/rada2.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/sigma.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family2.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya9.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya7.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nikita.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya8.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family15.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family14.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family11.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family12.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family13.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family16.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/family17.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya10.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya11.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya15.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/haha2.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/haha1.jpg" alt="#">
+                </div>
+                <div class="photo">
+                    <img class="family-photo" src="./images/nastya14.jpg" alt="#">
+                </div>
+                <div class="family-contain">
+                    <div class="photo">
+                    <img class="family-photo" src="./images/family18.jpg" alt="#">
+                    <img class="family-photo" src="./images/family10.jpg" alt="#">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-block">
+            <div class="main-block-button">
+                <button id="toggleQuizButton" class="toggle-btn">
+                    <p class="toggle-btn-p">Відкрити вікторину</p>
+                </button>
+            </div>
+            
+            <!-- Модальное окно викторины -->
+            <div id="quizModal" class="modal" style="display: none;">
+                <div class="modal-content">
+    <div class="block-header">
+                    <h2 class="quiz-h2">Викторина про нашу сім'ю!</h2>
+                    <div class="block-close">
+                        <button id="closeQuizButton" class="close-modal">×</button>
+                    </div>
+                </div>
+                    <form id="quiz-form">
+
+                        <div class="question">
+                            <p class="question-p" class="question-p">1. Як звати маму в нашій родині?</p>
+                            <div class="question-answers">
+                            <label>
+                                <input type="radio" name="question1" value="Анастасія"> Настя
+                            </label>
+                            <label>
+                                <input type="radio" name="question1" value="Олена"> Рада
+                            </label>
+                            <label>
+                                <input type="radio" name="question1" value="Майя"> Майя
+                            </label>
+                            <label>
+                                <input type="radio" name="question1" value="Маша"> Маша
+                            </label>
+                        </div>
+                        </div>
+                        
+                        <div class="question">
+                            <p class="question-p">2. Скільки років нашому молодшому члену сім'ї?</p>
+                            <div class="question-answers">
+                            <label>
+                                <input type="radio" name="question2" value="4"> 4
+                            </label>
+                            <label>
+                                <input type="radio" name="question2" value="5"> 5
+                            </label>
+                            <label>
+                                <input type="radio" name="question2" value="6"> 6
+                            </label>
+                        </div>
+                        </div>
+                        <div class="question">
+                            <p class="question-p">3. Скільки ми живемо в Польщі?</p>
+                            <div class="question-answers">
+                            <label>
+                                <input type="radio" name="question3" value="2">
+                                2
+                            </label>
+                            <label>
+                                <input type="radio" name="question3" value="3">
+                                3
+                            </label>
+                            <label>
+                                <input type="radio" name="question3" value="4">
+                                4
+                            </label>
+                        </div>
+                        </div>
+                        <div class="question">
+                            <p class="question-p">4. Маминi улюбленi квiти?</p>
+                            <div class="question-answers">
+                            <label>
+                                <input type="radio" name="question4" value="Ромашки">
+                                Ромашки
+                            </label>
+                            <label>
+                                <input type="radio" name="question4" value="Хрезонтеми">
+                                Хрезонтеми
+                            </label>
+                            <label>
+                                <input type="radio" name="question4" value="Мак">
+                                Мак
+                            </label>
+                            <label>
+                                <input type="radio" name="question4" value="Тюльпани">
+                                Тюльпани
+                            </label>
+                        </div>
+                        </div>
+                        <div class="question">
+                            <p class="question-p">5. Що мама не любить? </p>
+                            <div class="question-answers">
+                            <label>
+                                <input type="radio" name="question5" value="Сало">
+                                Сало
+                            </label>
+                            <label>
+                                <input type="radio" name="question5" value="Оливки">
+                                Оливки
+                            </label>
+                            <label>
+                                <input type="radio" name="question5" value="Смердючий сир">
+                                Смердючий сир
+                            </label>
+                        </div>
+                        </div>
+                        <div class="question">
+                            <p class="question-p">6. Мамин улюблений колiр?</p>
+                            <div class="question-answers">
+                            <label>
+                                <input type="radio" name="question6" value="Червоний">
+                                Червоний
+                            </label>
+                            <label>
+                                <input type="radio" name="question6" value="Фiолетовий">
+                                Фiолетовий
+                            </label> <br>
+                            <label>
+                                <input type="radio" name="question6" value="Жовтий">
+                               Жовтий
+                            </label>
+                        </div>
+                        </div>
+                        <div class="question">
+                            <p class="question-p">7. Мамира улюблена фраза?</p>
+                            <div class="question-answers">
+                            <label>
+                                <input type="radio" name="question7" value="Слишком грамотним стал?">
+                                Слишком грамотним стал?
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="question7" value="Жопа ти мала">
+                                Жопа ти мала
+                            </label> <br>
+                            <label>
+                                <input type="radio" name="question7" value="Максим Тю надар Тю Никита Бодя">
+                               Максим Тю надар Тю Никита Бодя
+                            </label>
+                        </div>
+                        </div>
+                        <!-- Остальные вопросы -->
+                        <button type="button" onclick="submitQuiz()" class="quizz-btn-admin">Перевірити результат</button>
+                    </form>
+                    <div id="result" class="result"></div>
+                </div>
+            </div>
+                <div class="events">
+                <div class="events-container container">
+                    <h2 class="events-h2">Календарь подій</h2>
+       <ul class="events-list">
+           <li class="events-item">10 Січня - День народження у Насті</li>
+           <li class="events-item">5 Лютого - День народження у Мами</li>
+           <li class="events-item">8 Березня - День народження у Богдана</li>
+           <li class="events-item">13 Червня - День народження у Максима</li>
+           <li class="events-item">16 Червня - День народження у Ради</li>
+           <li class="events-item">30 Вересня - День народження у Надара</li>
+           <li class="events-item">30 Грудня - День народження у Нікіти</li>
+       </ul>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-block">
+            <div class="footer-slideshow">
+            <img class="footer-slide" src="./images/serdce.png" alt="serdce">
+            <img class="footer-slide" src="./images/serdce2.png" alt="serdce">
+            <img class="footer-slide" src="./images/serdce3.png" alt="serdce">
+            </div>
+            <h2 class="footer-h2">❤️ З любов'ю ❤️<br>❤️ для нашої мами ❤️</h2>
+    <div class="footer-slideshow">
+        <img class="footer-slide" src="./images/serdce3.png" alt="serdce">
+        <img class="footer-slide" src="./images/serdce2.png" alt="serdce">
+        <img class="footer-slide" src="./images/serdce.png" alt="serdce">
+          </div>
+    </div>
+       
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
