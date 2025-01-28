@@ -690,4 +690,10 @@ text-align: center;
     .footer-h2 {
         font-size: 18px;
     }
+	.footer-slideshow {
+display: none;
+  }
+  .footer-slide {
+ display: none;
+  }
 }
