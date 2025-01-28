@@ -54,25 +54,6 @@ padding-top: 25px;
 }
 
 
-
-
-
-
-
-
-
-/* .photo-slider {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-} */
-
-/* .slide {
-    display: none; /* Скрыть все слайды по умолчанию */
-    width: 30%;
-margin-left: 350px;
-}
-
 .slide.active {
     display: block; /* Показывать только активный слайд */
 } */
@@ -249,17 +230,6 @@ footer {
         max-height: 90px;
         display: none;
     }
-    /* .gallery {
-        gap: 15px;
-    }
-    .photo {
-        max-width: 180px;
-        max-height: 240px;
-    }
-
-    .photo img {
-        border-bottom: 1px solid #f67280;
-    } */
     footer {
         padding: 15px;
         font-size: 15px;
@@ -272,11 +242,17 @@ footer {
         max-width: 100%;
         margin-bottom: 15px;
         display: none;
+	      height: 0;
+	    width: 0;
+	    overflow: hidden;
     }
     .footer-slide {
         max-width: 90px;
         max-height: 90px;
         display: none;
+	    height: 0;
+	    width: 0;
+	    overflow: hidden;
     }
     .footer-h2 {
         font-size: 18px;
